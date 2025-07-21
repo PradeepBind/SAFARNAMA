@@ -1,0 +1,182 @@
+/* Container */
+.homepage-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+/* Dropdown filter */
+.filter-container {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.section-filter {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1.5px solid #ddd;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  color: #333;
+  min-width: 220px;
+  font-weight: 600;
+}
+
+/* Sections */
+.section {
+  padding: 30px 20px 50px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Card grid 4 per row */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Tour Card */
+.tour-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image wrapper */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Offer badge */
+.offer-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  box-shadow: 0 0 6px #e74c3c;
+}
+
+/* Card body */
+.card-body {
+  padding: 15px 12px;
+  flex-grow: 1;
+}
+
+.card-body h5 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.card-body p {
+  margin: 3px 0;
+  font-size: 0.9rem;
+}
+
+.price {
+  font-weight: 700;
+  color: #ffd700;
+  margin-top: 8px;
+}
+
+/* Details button */
+.details-btn {
+  margin-top: 12px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #ffd700;
+  color: #000;
+}
+
+/* Expanded card details */
+.card-details {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 15px;
+  font-size: 0.9rem;
+  color: #eee;
+  border-top: 1px solid #ffd700;
+}
+
+.card-details p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Booking button inside details */
+.btn-book {
+  background-color: #ff6f61; /* changed color */
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #ff3b2f;
+}
+
+/* Responsive: 2 cards per row on smaller screens */
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: 1 card per row on mobile */
+@media (max-width: 500px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

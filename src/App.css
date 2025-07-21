@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #3b5079;
+  overflow-x: hidden;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  padding: 0.5rem 2rem;
+  flex-wrap: wrap;
+  height: 60px;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-actions input {
+  margin-right: 0.5rem;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+}
+
+.nav-actions button {
+  margin-right: 0.5rem;
+  padding: 6px 10px;
+  border: none;
+  background-color: #fcb69f;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #1e1e2f;
+  color: white;
+}
+
+.main-content {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.dark-mode .content-wrapper {
+  background: #2c2c3f;
+}
+
